@@ -1,0 +1,13 @@
+config:
+  environments:
+    local:
+      target: "http://localhost:5000"
+      phases:
+        - name: "Load Test Periodico"
+          arrivalRate: 20
+          duration: 50
+scenarios:
+  - name: "Pagina inicial"
+    flow:
+    - get:
+        url: "/"
