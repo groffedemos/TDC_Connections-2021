@@ -22,8 +22,8 @@ namespace SiteContagem.Pages
 
             logger.LogInformation($"Contador - Valor atual: {valorAtualContador}");
 
-            if (valorAtualContador % 10 == 0)
-                throw new Exception("Simulação de falha");
+            //if (valorAtualContador % 10 == 0)
+            //    throw new Exception("Simulação de falha");
             
             TempData["Contador"] = valorAtualContador;
             TempData["Local"] = _CONTADOR.Local;
